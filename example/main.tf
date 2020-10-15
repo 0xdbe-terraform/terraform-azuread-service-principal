@@ -1,8 +1,8 @@
-module "azure-ad-sp" {
+module "azure_ad_sp" {
   
   # Module source
-  source = "git::https://github.com/0xdbe-terraform/terraform-azure-ad-service-principal.git?ref=v1.0.0"
+  source = "git::https://github.com/0xdbe-terraform/terraform-azure-ad-service-principal.git?ref=v1.0.1"
   
   # Modules vars
-  application_name         = "Hello World"
+  application_name  = "Hello World"
 }
