@@ -1,6 +1,6 @@
 # Create an "Enterprise Application" in Azure Active Directory that will be associate to Service Principal
 resource azuread_application main {
-  name      = var.application_name
+  name      = "sp-${replace(var.application_full_name, " ","")}-${var.service_principal_purpose}-${var.application_environment}"
   homepage  = var.application_homepage
 }
 
