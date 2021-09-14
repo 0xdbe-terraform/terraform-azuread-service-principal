@@ -6,7 +6,7 @@ output "service_principal_id" {
   value = azuread_service_principal.main.id
 }
 
-output "service_principal_key" {
-  value     = random_password.main.result
+output "service_principal_password" {
+  value     = azuread_service_principal_password.main.value
   sensitive = true
 }

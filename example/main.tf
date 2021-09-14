@@ -5,7 +5,7 @@ locals {
 }
 
 module "azure_ad_sp" {
-  source                    = "git::https://github.com/0xdbe-terraform/terraform-azure-ad-service-principal.git?ref=v2.0.2"
+  source                    = "../"
   application_full_name     = local.application_full_name
   application_environment   = local.application_environment
   service_principal_purpose = local.service_principal_purpose
